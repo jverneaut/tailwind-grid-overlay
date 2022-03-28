@@ -10,7 +10,7 @@ const showGrid = () => {
 
   const html = `
     <div class="container">
-      <div class="${prefix}grid">
+      <div class="${prefix}grid ${prefix}grid-nested">
         <div class="${prefix}grid-row">
           ${columns.join('')}
         </div>
