@@ -24,6 +24,10 @@
   position: relative;
   height: 100%;
   background-color: rgba(76, 199, 142, 0.2);
+
+  /* Defaults */
+  width: 8.3333%;
+  display: inline-block;
 }
 
 #show-tailwind-grid-overlay [class*='grid-col-'] > div {
