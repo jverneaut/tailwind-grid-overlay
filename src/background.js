@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(() => {
-  chrome.tabs.insertCSS(null, { file: 'src/grid.css' });
-  chrome.tabs.executeScript(null, { file: 'src/content.js' });
+chrome.action.onClicked.addListener((tab) => {
+  chrome.scripting.insertCSS({ target: { tabId: tab.id }, files: ['src/grid.css'] });
+  chrome.scripting.executeScript({ target: { tabId: tab.id }, files: ['src/content.js'] });
 });
